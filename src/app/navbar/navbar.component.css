@@ -1,0 +1,9 @@
+.navbar {
+    transition: all 0.5s ;
+    
+}
+.navbar-brand {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

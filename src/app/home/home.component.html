@@ -1,0 +1,35 @@
+<section class="">
+    <h2 class="text-capitalize text-center font-1  mb-5  ">Welcome to our store</h2>
+    <div class="container">
+        <div class="row  gy-2">
+            @for (product of products; track $index) {
+                <div class=" col-md-4 overflow-hidden"  >
+                    <div class=" card rounded-4 shadow h-100 bg-body" >
+                        <p class="text-center rounded-top-4 font-1 bg-warning">{{product.id }}</p>
+                        <p class="text-center text-capitalize"> <span class="font-1">Category:</span> {{product.category }}</p>
+                        <img [src]=" product.image" class="w-100 border object-fit-contain " width="" height="500px" alt="">
+                        <div class="Rate d-flex justify-content-between text-warning  ">
+                            <span class=" w-25 ps-2 rounded-end-2 bg-danger ">{{product.rating.rate}}
+                                <img class="position-relative " src="../../assets/imgs/free-star-bookmark-favorite-shape-rank-16-28621.webp" width="20px" alt="">
+                                <span class=""> ({{product.rating.count}}) </span>
+                                
+                            </span> 
+                            <span class=" px-2 bg-danger rounded-start-2 ">{{product.price}}$</span>
+                            
+                        </div>
+                        <div class="add ">
+                            <img class=" " src="../../assets/imgs/add.png" alt=""></div>
+                        
+                         
+                        <h3 class="text-center">{{product.title.split(' ', 3).join(' ') }}</h3>
+                        <p class="text-center"> {{product.description.split(' ', 5).join(' ')}}</p>
+                        
+                        
+                       
+                    </div>
+                </div>
+            }
+        </div>
+       
+    </div>
+</section>

@@ -1,0 +1,11 @@
+
+body {
+    padding-top: 5rem;
+    background: linear-gradient(to bottom, #FFEFBA, #FFFFFF);
+}
+.font-1 {
+        font-family: "Poetsen One", sans-serif;
+}
+.bg-1 {
+    background-color: rgba(248, 1, 1, 0.685);
+}

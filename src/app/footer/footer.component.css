@@ -1,0 +1,9 @@
+footer {
+    padding-block:3rem ;
+    margin-top: 2rem;
+}
+.icons i {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
